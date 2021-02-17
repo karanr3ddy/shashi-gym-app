@@ -31,7 +31,7 @@ export function WorkoutsTab({navigation}) {
     }
     return (
         <View style={{height:"100%"}}>
-              <Title style={{fontSize:24}}>Shashi gym</Title>
+              <Title style={{fontSize:24, fontFamily:"Bebas Neue"}}>Shashi gym</Title>
         <ScrollView>
             {plans.map((plan,key) =><div key={key} style={{paddingTop:10}} > 
                 <WorkoutCard onPress={handleCardClick} title={plan.title}/>

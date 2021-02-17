@@ -5,7 +5,7 @@ export function WorkoutCard({title,onPress}){
     return(
         <Card onPress={onPress}>
         <Card.Content>
-          <Title>{title}</Title>
+          <Title style={{ fontFamily:"Bebas Neue"}}>{title}</Title>
           <Paragraph>Card content</Paragraph>
         </Card.Content>
       </Card>

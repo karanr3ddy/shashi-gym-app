@@ -17,22 +17,22 @@ const Stack = createStackNavigator();
 const slides = [
   {
     key: 'one',
-    title: 'Title 1',
-    text: 'Description.\nSay something cool',
+    title: 'Gym at your home',
+    text: 'Your workout plan starts here',
     image: './assets/slides/1080x1920.png',
     backgroundColor: '#59b2ab',
   },
   {
     key: 'two',
-    title: 'Title 2',
-    text: 'Other cool stuff',
+    title: 'A Personal trainer',
+    text: 'A step by step curated workouts',
     image: './assets/slides/1080x1920.png',
     backgroundColor: '#febe29',
   },
   {
     key: 'three',
-    title: 'Rocket guy',
-    text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
+    title: 'Trainer: Shishander Patel',
+    text: 'A personal gym trainer at your finger tips',
     image: './assets/slides/1080x1920.png',
     backgroundColor: '#22bcb5',
   }
