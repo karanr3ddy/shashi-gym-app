@@ -19,7 +19,7 @@ export default function App() {
     <View style={styles.container}>
       
       <StatusBar style="auto" />
-      <Stack.Navigator headerMode={'screen'}>
+      <Stack.Navigator headerMode={'none'}>
           <Stack.Screen name="Home"  options={{ title: 'Shashi gym' }} component={HomeScreen} />
       </Stack.Navigator>
     </View>

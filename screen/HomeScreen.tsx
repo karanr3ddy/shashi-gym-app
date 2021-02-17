@@ -41,9 +41,9 @@ export function WorkoutsTab() {
 
  }
 
- const AlbumsRoute = () => <Text>Albums</Text>;
+ const AlbumsRoute = () => <Text>Comming soon</Text>;
  
- const RecentsRoute = () => <Text>Recents</Text>;
+ const RecentsRoute = () => <Text>trainer profile</Text>;
  export function HomeScreen(){
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
