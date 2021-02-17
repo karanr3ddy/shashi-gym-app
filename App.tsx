@@ -7,6 +7,7 @@ import { HomeScreen } from './screen/HomeScreen';
 import {BebasNeue_400Regular} from '@expo-google-fonts/bebas-neue';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { PlanScreen } from './screen/PlanScreen';
 const Stack = createStackNavigator();
 export default function App() {
    let [fontsLoaded] = useFonts({
@@ -15,14 +16,12 @@ export default function App() {
 
    return (
     <PaperProvider>
-       <NavigationContainer>
-    <View style={styles.container}>
-      
+       <NavigationContainer> 
       <StatusBar style="auto" />
-      <Stack.Navigator headerMode={'none'}>
+      <Stack.Navigator headerMode={'none'}  initialRouteName="Home">
           <Stack.Screen name="Home"  options={{ title: 'Shashi gym' }} component={HomeScreen} />
+          <Stack.Screen name="Plan" component={PlanScreen} />
       </Stack.Navigator>
-    </View>
     </NavigationContainer>
     </PaperProvider>
  

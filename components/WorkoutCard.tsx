@@ -1,10 +1,11 @@
 import React from "react";
 import { Avatar, Card, Paragraph, Title } from "react-native-paper";
-export function WorkoutCard(props:{title:string}){
+export function WorkoutCard({title,onPress}){
+ 
     return(
-        <Card>
+        <Card onPress={onPress}>
         <Card.Content>
-          <Title>{props.title}</Title>
+          <Title>{title}</Title>
           <Paragraph>Card content</Paragraph>
         </Card.Content>
       </Card>
