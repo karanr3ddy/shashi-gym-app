@@ -26,8 +26,9 @@ export function PlanScreen({navigation}) {
         },
     ]
     return (
-        <div> <Appbar>
-        <Appbar.Action
+        <div> 
+            <Appbar>
+            <Appbar.Action
           icon="chevron-left"
           onPress={() => navigation.goBack()}
          />
@@ -37,6 +38,7 @@ export function PlanScreen({navigation}) {
             <List.Item title={plan.title}
              description="Item description"
              left={props => <List.Icon {...props} icon="dumbbell" />}
+             onPress={()=>{navigation.navigate('Workout')}}
              />
             </div> )}
             
